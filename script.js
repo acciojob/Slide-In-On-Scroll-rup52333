@@ -15,12 +15,12 @@ const imageBotton=slideImage.offsetTop+sliderImage.height;
 const isHalfShown=slideInAt>slideImage.offsetTop;
 const isNotScrolledPast=window.scrollY<imageBotton;
 if(isHalfShown && isNotScrolledPast){
-slideImage.classList.add("active");
+sliderImage.classList.add("active");
 		
 
 	}
 else{
-slideImage.classList.remove("active");
+sliderImage.classList.remove("active");
 	
 }
 	
