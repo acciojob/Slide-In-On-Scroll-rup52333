@@ -61,10 +61,11 @@
     }
 
     
-console.log(sliderImages);
+    const sliderImages=document.querySelectorAll(".slide-in");
 
 function checkSlide(e) {
-  const sliderImages=document.querySelectorAll(".slide-in");
+ 
+  // console.log(sliderImages);
 sliderImages.forEach(sliderImage=>{
 const slideInAt=(window.scrollY+window.innerHeight)-sliderImage.height/2;
 const imageBotton=sliderImage.offsetTop+sliderImage.height;
