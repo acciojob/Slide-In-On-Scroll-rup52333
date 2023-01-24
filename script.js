@@ -28,6 +28,13 @@ sliderImage.classList.remove("active");
 
 	
 }
+
+window.addEventListener("scroll",debounce(checkSlide));
+
+
+
+
+
 window.addEventListener("scroll",debounce(checkSlide));
 
 
