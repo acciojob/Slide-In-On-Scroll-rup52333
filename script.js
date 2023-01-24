@@ -11,8 +11,8 @@ const sliderImages=document.querySelectorAll(".slide-in");
 function checkSlide(e) {
 sliderImages.forEach(sliderImage=>{
 const slideInAt=(window.scrollY+window.innerHeight)-sliderImage.height/2;
-const imageBotton=slideImage.offsetTop+sliderImage.height;
-const isHalfShown=slideInAt>slideImage.offsetTop;
+const imageBotton=sliderImage.offsetTop+sliderImage.height;
+const isHalfShown=slideInAt>sliderImage.offsetTop;
 const isNotScrolledPast=window.scrollY<imageBotton;
 if(isHalfShown && isNotScrolledPast){
 sliderImage.classList.add("active");
